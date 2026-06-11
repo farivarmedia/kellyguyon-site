@@ -44,7 +44,7 @@
     .masthead .wrap {
       display: flex;
       justify-content: space-between;
-      align-items: baseline;
+      align-items: center;
     }
     .masthead-name {
       font-family: 'Bebas Neue', sans-serif;
@@ -128,21 +128,51 @@
       border-radius: 2px;
     }
 
-    /* RULE NAV */
+    /* HAMBURGER BUTTON */
+    .nav-toggle {
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0.3rem;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      margin-left: 1.5rem;
+      flex-shrink: 0;
+    }
+    .nav-toggle span {
+      display: block;
+      width: 22px;
+      height: 2px;
+      background: var(--mid);
+      transition: transform 0.2s, opacity 0.2s;
+    }
+    .nav-toggle.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .nav-toggle.open span:nth-child(2) { opacity: 0; }
+    .nav-toggle.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    /* RULE NAV - dropdown */
     .rule-nav {
       border-bottom: 1px solid var(--rule);
-      padding: 0.9rem 0;
+      display: none;
     }
+    .rule-nav.open { display: block; }
     .rule-nav .wrap {
       display: flex;
-      gap: 3rem;
+      flex-direction: column;
+      gap: 0;
+      padding: 0.25rem 0;
     }
     .rule-nav a {
       font-size: 11px;
       letter-spacing: 0.12em;
       text-transform: uppercase;
       color: var(--mid);
+      padding: 0.85rem 0;
+      border-bottom: 1px solid var(--rule);
+      display: block;
     }
+    .rule-nav a:last-child { border-bottom: none; }
     .rule-nav a:hover { color: var(--white); text-decoration: none; }
 
     /* FEATURE SECTION */
@@ -328,8 +358,7 @@
       .career-period { border-right: none; padding-bottom: 0; }
       .contact-section { grid-template-columns: 1fr; }
       .contact-left { border-right: none; }
-      .rule-nav .wrap { gap: 1.5rem; flex-wrap: wrap; }
-      footer .wrap { flex-direction: column; align-items: flex-start; }
+footer .wrap { flex-direction: column; align-items: flex-start; }
       .license { text-align: left; }
     }
   </style>
@@ -340,6 +369,11 @@
     <div class="wrap">
       <span class="masthead-name">Kelly Guyon</span>
       <span class="masthead-tag">Account Executive · Entrepreneur · Licensed Funeral Director</span>
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
   </header>
 
@@ -453,6 +487,23 @@
       <p class="license">Licensed Funeral Director · California Cemetery and Funeral Bureau · Issued Jun 2015 · Credential ID FDR 3862</p>
     </div>
   </footer>
+
+  <script>
+    var toggle = document.querySelector('.nav-toggle');
+    var nav = document.querySelector('.rule-nav');
+    toggle.addEventListener('click', function () {
+      var open = nav.classList.toggle('open');
+      toggle.classList.toggle('open', open);
+      toggle.setAttribute('aria-expanded', open);
+    });
+    document.querySelectorAll('.rule-nav a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        nav.classList.remove('open');
+        toggle.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  </script>
 
 </body>
 </html>
