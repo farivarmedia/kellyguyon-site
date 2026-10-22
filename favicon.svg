@@ -1,10 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
   <rect width="512" height="512" rx="96" fill="#ffffff"/>
-  <g fill="#d62828">
-    <path d="M58 144 H100 V368 H58 Z"/>
-    <path d="M142 144 H198 L100 256 V192 Z"/>
-    <path d="M142 368 H198 L100 256 V320 Z"/>
-    <rect x="342" y="256" width="88" height="42"/>
+  <g transform="translate(256 256) scale(1.2) translate(-256 -256)">
+    <g fill="#d62828">
+      <path d="M58 144 H100 V368 H58 Z"/>
+      <path d="M142 144 H198 L100 256 V192 Z"/>
+      <path d="M142 368 H198 L100 256 V320 Z"/>
+      <rect x="342" y="256" width="88" height="42"/>
+    </g>
+    <path d="M400.5 186.3 A91 91 0 1 0 433 256" fill="none" stroke="#d62828" stroke-width="42"/>
   </g>
-  <path d="M400.5 186.3 A91 91 0 1 0 433 256" fill="none" stroke="#d62828" stroke-width="42"/>
 </svg>
