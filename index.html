@@ -5,10 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Kelly Guyon | Strategic Account Executive &amp; Media Strategist | Oakland, CA</title>
   <meta name="description" content="Kelly Guyon is a Strategic Account Executive at Hearst Bay Area, founder of Deathcare Solutions, and licensed funeral director in California. She designs multi-channel media campaigns for Bay Area businesses and was the founding funeral director at Tulip Cremation.">
+  <meta name="author" content="Kelly Guyon">
   <link rel="canonical" href="https://kellyguyon.com/">
+  <link rel="icon" href="/favicon.ico">
 
   <!-- Open Graph -->
   <meta property="og:type" content="profile">
+  <meta property="og:locale" content="en_US">
   <meta property="og:title" content="Kelly Guyon | Strategic Account Executive &amp; Media Strategist">
   <meta property="og:description" content="Kelly Guyon is a Strategic Account Executive at Hearst Bay Area, founder of Deathcare Solutions, and licensed funeral director in California. She designs multi-channel media campaigns for Bay Area businesses and was the founding funeral director at Tulip Cremation.">
   <meta property="og:url" content="https://kellyguyon.com/">
@@ -23,7 +26,7 @@
   <meta name="twitter:description" content="Kelly Guyon is a Strategic Account Executive at Hearst Bay Area, founder of Deathcare Solutions, and licensed funeral director in California.">
   <meta name="twitter:image" content="https://kellyguyon.com/images/kelly-headshot.jpeg">
 
-  <!-- Structured Data -->
+  <!-- Person Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -50,6 +53,18 @@
     "sameAs": [
       "https://www.linkedin.com/in/kellyguyon/"
     ],
+    "knowsAbout": [
+      "media strategy",
+      "multi-channel advertising",
+      "digital media campaigns",
+      "Bay Area advertising",
+      "alkaline hydrolysis",
+      "water cremation",
+      "deathcare consulting",
+      "funeral director licensing",
+      "CRM implementation",
+      "AI tools for sales"
+    ],
     "description": "Media strategist, entrepreneur, and licensed funeral director based in Oakland, CA. Strategic Account Executive at Hearst Bay Area and founder of Deathcare Solutions.",
     "hasCredential": {
       "@type": "EducationalOccupationalCredential",
@@ -61,6 +76,48 @@
         "name": "California Cemetery and Funeral Bureau"
       }
     }
+  }
+  </script>
+
+  <!-- FAQ Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What does Kelly Guyon do?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Kelly Guyon is a Strategic Account Executive at Hearst Bay Area, where she helps local and regional businesses design multi-channel media campaigns with clear conversion goals. She also founded Deathcare Solutions, a funeral industry consultancy, and is a licensed funeral director in California."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is alkaline hydrolysis or water cremation?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Alkaline hydrolysis — also called water cremation or aquamation — is an eco-friendly alternative to flame cremation that uses water and alkaline chemicals to gently reduce a body to bone mineral. It produces a significantly smaller carbon footprint than traditional cremation. Kelly Guyon is a leading consultant in water cremation and alkaline hydrolysis, having advised early-stage funeral homes on implementing the process through her consultancy, Deathcare Solutions."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What industries does Kelly Guyon work with at Hearst Bay Area?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "At Hearst Bay Area, Kelly Guyon manages accounts across home services, healthcare, legal, retail, and the arts — designing targeted media campaigns for local and regional businesses throughout the San Francisco Bay Area."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is Kelly Guyon's background in the funeral industry?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Kelly Guyon joined Tulip Cremation in 2018 as its founding funeral director and helped grow it into the largest cremation society in California within a year, overseeing more than 12,000 cremations. She later founded Deathcare Solutions, a consultancy focused on licensing, family experience design, and CRM implementation for early-stage funeral homes. She holds a California funeral director license (FDR 3862) issued by the California Cemetery and Funeral Bureau."
+        }
+      }
+    ]
   }
   </script>
 
@@ -92,6 +149,7 @@
 
     a { color: var(--accent); text-decoration: none; }
     a:hover { text-decoration: underline; }
+    address { font-style: normal; }
     .wrap { max-width: var(--max); margin: 0 auto; padding: 0 2.5rem; }
 
     /* MASTHEAD */
@@ -328,6 +386,55 @@
       color: var(--mid);
     }
 
+    /* FAQ */
+    .faq-section {
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      border-bottom: 1px solid var(--rule);
+    }
+    .faq-label {
+      padding: 3.5rem 2rem 3.5rem 2.5rem;
+      border-right: 1px solid var(--rule);
+    }
+    .faq-label-text {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 13px;
+      letter-spacing: 0.18em;
+      color: var(--mid);
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+      transform: rotate(180deg);
+    }
+    .faq-body {
+      padding: 3.5rem 2.5rem;
+    }
+    .faq-item {
+      padding-bottom: 2.5rem;
+      margin-bottom: 2.5rem;
+      border-bottom: 1px solid var(--rule);
+    }
+    .faq-item:last-child {
+      padding-bottom: 0;
+      margin-bottom: 0;
+      border-bottom: none;
+    }
+    .faq-q {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 22px;
+      letter-spacing: 0.04em;
+      color: var(--white);
+      margin-bottom: 0.75rem;
+      line-height: 1.2;
+      font-weight: 400;
+    }
+    .faq-a {
+      font-family: 'Source Serif 4', serif;
+      font-size: 16px;
+      color: #2A2826;
+      line-height: 1.85;
+      font-weight: 300;
+    }
+
     /* CONTACT */
     .contact-section {
       display: grid;
@@ -358,6 +465,10 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+    }
+    .contact-right address {
+      display: flex;
+      flex-direction: column;
       gap: 1.5rem;
     }
     .contact-item-label {
@@ -401,6 +512,8 @@
       .feature-label { display: none; }
       .career-row { grid-template-columns: 1fr; }
       .career-period { border-right: none; padding-bottom: 0; }
+      .faq-section { grid-template-columns: 1fr; }
+      .faq-label { display: none; }
       .contact-section { grid-template-columns: 1fr; }
       .contact-left { border-right: none; }
       footer .wrap { flex-direction: column; align-items: flex-start; }
@@ -438,10 +551,11 @@
     </div>
   </div>
 
-  <nav class="rule-nav">
+  <nav class="rule-nav" aria-label="Site navigation">
     <div class="wrap">
       <a href="#about">About</a>
       <a href="#career">Career</a>
+      <a href="#faq">FAQ</a>
       <a href="#contact">Contact</a>
     </div>
   </nav>
@@ -464,7 +578,7 @@
 
       <div class="career-row">
         <div class="career-period">
-          <div class="career-year"><time datetime="2023">2023</time></div>
+          <div class="career-year"><time datetime="2023">2023–</time></div>
           <div class="career-org">Hearst Bay Area</div>
         </div>
         <div class="career-content">
@@ -475,7 +589,7 @@
 
       <div class="career-row">
         <div class="career-period">
-          <div class="career-year"><time datetime="2021">2021</time></div>
+          <div class="career-year"><time datetime="2021">2021–23</time></div>
           <div class="career-org">Deathcare Solutions</div>
         </div>
         <div class="career-content">
@@ -486,7 +600,7 @@
 
       <div class="career-row">
         <div class="career-period">
-          <div class="career-year"><time datetime="2018">2018</time></div>
+          <div class="career-year"><time datetime="2018">2018–21</time></div>
           <div class="career-org">Tulip Cremation</div>
         </div>
         <div class="career-content">
@@ -502,6 +616,35 @@
       <p class="pullquote-attr">— Kelly Guyon, on deathcare, media, and everything in between</p>
     </div>
 
+    <section class="faq-section" id="faq">
+      <div class="faq-label">
+        <span class="faq-label-text">FAQ</span>
+      </div>
+      <div class="faq-body">
+
+        <div class="faq-item">
+          <h3 class="faq-q">What does Kelly Guyon do?</h3>
+          <p class="faq-a">Kelly Guyon is a Strategic Account Executive at Hearst Bay Area, where she helps local and regional businesses design multi-channel media campaigns with clear conversion goals. She also founded Deathcare Solutions, a funeral industry consultancy, and is a licensed funeral director in California.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-q">What is alkaline hydrolysis or water cremation?</h3>
+          <p class="faq-a">Alkaline hydrolysis — also called water cremation or aquamation — is an eco-friendly alternative to flame cremation that uses water and alkaline chemicals to gently reduce a body to bone mineral. It produces a significantly smaller carbon footprint than traditional cremation. Kelly Guyon is a leading consultant in water cremation and alkaline hydrolysis, having advised early-stage funeral homes on implementing the process through her consultancy, Deathcare Solutions.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-q">What industries does Kelly Guyon work with at Hearst Bay Area?</h3>
+          <p class="faq-a">At Hearst Bay Area, Kelly Guyon manages accounts across home services, healthcare, legal, retail, and the arts — designing targeted media campaigns for local and regional businesses throughout the San Francisco Bay Area.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-q">What is Kelly Guyon's background in the funeral industry?</h3>
+          <p class="faq-a">Kelly Guyon joined Tulip Cremation in 2018 as its founding funeral director and helped grow it into the largest cremation society in California within a year, overseeing more than 12,000 cremations. She later founded Deathcare Solutions, a consultancy focused on licensing, family experience design, and CRM implementation for early-stage funeral homes. She holds a California funeral director license (FDR 3862) issued by the California Cemetery and Funeral Bureau.</p>
+        </div>
+
+      </div>
+    </section>
+
   </main>
 
   <section class="contact-section" id="contact">
@@ -510,18 +653,20 @@
       <p class="contact-sub">Open to conversations about media strategy, deathcare innovation, entrepreneurship, and collaboration.</p>
     </div>
     <div class="contact-right">
-      <div>
-        <p class="contact-item-label">Email</p>
-        <p class="contact-item-value"><a href="mailto:kelly.guyon@gmail.com">kelly.guyon@gmail.com</a></p>
-      </div>
-      <div>
-        <p class="contact-item-label">LinkedIn</p>
-        <p class="contact-item-value"><a href="https://www.linkedin.com/in/kellyguyon/" target="_blank" rel="noopener">linkedin.com/in/kellyguyon</a></p>
-      </div>
-      <div>
-        <p class="contact-item-label">Location</p>
-        <p class="contact-item-value">Oakland, CA · Bay Area</p>
-      </div>
+      <address>
+        <div>
+          <p class="contact-item-label">Email</p>
+          <p class="contact-item-value"><a href="mailto:kelly.guyon@gmail.com">kelly.guyon@gmail.com</a></p>
+        </div>
+        <div>
+          <p class="contact-item-label">LinkedIn</p>
+          <p class="contact-item-value"><a href="https://www.linkedin.com/in/kellyguyon/" target="_blank" rel="noopener me">linkedin.com/in/kellyguyon</a></p>
+        </div>
+        <div>
+          <p class="contact-item-label">Location</p>
+          <p class="contact-item-value">Oakland, CA · Bay Area</p>
+        </div>
+      </address>
     </div>
   </section>
 
