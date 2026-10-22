@@ -3,9 +3,67 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Kelly Guyon</title>
-  <meta name="description" content="Kelly Guyon — media strategist, entrepreneur, and licensed funeral director based in Oakland, CA.">
+  <title>Kelly Guyon | Strategic Account Executive &amp; Media Strategist | Oakland, CA</title>
+  <meta name="description" content="Kelly Guyon is a Strategic Account Executive at Hearst Bay Area, founder of Deathcare Solutions, and licensed funeral director in California. She designs multi-channel media campaigns for Bay Area businesses and was the founding funeral director at Tulip Cremation.">
   <link rel="canonical" href="https://kellyguyon.com/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Kelly Guyon | Strategic Account Executive &amp; Media Strategist">
+  <meta property="og:description" content="Kelly Guyon is a Strategic Account Executive at Hearst Bay Area, founder of Deathcare Solutions, and licensed funeral director in California. She designs multi-channel media campaigns for Bay Area businesses and was the founding funeral director at Tulip Cremation.">
+  <meta property="og:url" content="https://kellyguyon.com/">
+  <meta property="og:image" content="https://kellyguyon.com/images/kelly-headshot.jpeg">
+  <meta property="og:image:alt" content="Kelly Guyon, Strategic Account Executive at Hearst Bay Area">
+  <meta property="profile:first_name" content="Kelly">
+  <meta property="profile:last_name" content="Guyon">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Kelly Guyon | Strategic Account Executive &amp; Media Strategist">
+  <meta name="twitter:description" content="Kelly Guyon is a Strategic Account Executive at Hearst Bay Area, founder of Deathcare Solutions, and licensed funeral director in California.">
+  <meta name="twitter:image" content="https://kellyguyon.com/images/kelly-headshot.jpeg">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Kelly Guyon",
+    "url": "https://kellyguyon.com/",
+    "image": "https://kellyguyon.com/images/kelly-headshot.jpeg",
+    "email": "kelly.guyon@gmail.com",
+    "jobTitle": "Strategic Account Executive",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Hearst Bay Area"
+    },
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "University of California, Davis"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Oakland",
+      "addressRegion": "CA",
+      "addressCountry": "US"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/in/kellyguyon/"
+    ],
+    "description": "Media strategist, entrepreneur, and licensed funeral director based in Oakland, CA. Strategic Account Executive at Hearst Bay Area and founder of Deathcare Solutions.",
+    "hasCredential": {
+      "@type": "EducationalOccupationalCredential",
+      "name": "Funeral Director License",
+      "credentialCategory": "License",
+      "identifier": "FDR 3862",
+      "recognizedBy": {
+        "@type": "Organization",
+        "name": "California Cemetery and Funeral Bureau"
+      }
+    }
+  }
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Serif+4:ital,wght@0,300;0,400;1,300;1,400&family=Inter:wght@300;400&display=swap" rel="stylesheet">
@@ -51,6 +109,7 @@
       font-size: 28px;
       letter-spacing: 0.05em;
       color: var(--white);
+      font-weight: 400;
     }
     .masthead-tag {
       font-size: 11px;
@@ -112,20 +171,6 @@
       object-position: center top;
       display: block;
       filter: grayscale(20%);
-    }
-    .cover-image-caption {
-      position: absolute;
-      bottom: 1.5rem;
-      right: 1.5rem;
-      font-size: 11px;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: #0A0A0A;
-      text-align: right;
-      line-height: 1.6;
-      background: rgba(245,242,238,0.85);
-      padding: 0.4rem 0.6rem;
-      border-radius: 2px;
     }
 
     /* HAMBURGER BUTTON */
@@ -358,7 +403,7 @@
       .career-period { border-right: none; padding-bottom: 0; }
       .contact-section { grid-template-columns: 1fr; }
       .contact-left { border-right: none; }
-footer .wrap { flex-direction: column; align-items: flex-start; }
+      footer .wrap { flex-direction: column; align-items: flex-start; }
       .license { text-align: left; }
     }
   </style>
@@ -367,7 +412,7 @@ footer .wrap { flex-direction: column; align-items: flex-start; }
 
   <header class="masthead">
     <div class="wrap">
-      <span class="masthead-name">Kelly Guyon</span>
+      <h1 class="masthead-name">Kelly Guyon</h1>
       <span class="masthead-tag">Account Executive · Entrepreneur · Licensed Funeral Director</span>
       <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
         <span></span>
@@ -380,7 +425,7 @@ footer .wrap { flex-direction: column; align-items: flex-start; }
   <div class="cover">
     <div class="cover-text">
       <p class="cover-kicker">Oakland, CA · kellyguyon.com</p>
-      <div class="cover-headline">
+      <div class="cover-headline" aria-hidden="true">
         <span>SHE</span>
         <span>ASKS THE</span>
         <span class="red">HARD</span>
@@ -389,8 +434,7 @@ footer .wrap { flex-direction: column; align-items: flex-start; }
       <p class="cover-deck">From building the largest cremation provider in California to designing media campaigns for Bay Area businesses — a career defined by showing up where it counts.</p>
     </div>
     <div class="cover-image">
-      <img src="/images/kelly-headshot.jpeg" alt="Kelly Guyon">
-
+      <img src="/images/kelly-headshot.jpeg" alt="Kelly Guyon, Strategic Account Executive at Hearst Bay Area">
     </div>
   </div>
 
@@ -404,7 +448,7 @@ footer .wrap { flex-direction: column; align-items: flex-start; }
 
   <main>
 
-    <div class="feature" id="about">
+    <section class="feature" id="about">
       <div class="feature-label">
         <span class="feature-label-text">Profile</span>
       </div>
@@ -414,13 +458,13 @@ footer .wrap { flex-direction: column; align-items: flex-start; }
         <p>Earlier still, she joined <strong>Tulip Cremation</strong> as its founding funeral director and helped it become the largest cremation society in California within a year, overseeing more than 12,000 cremations and building the workflows and training programs that made it run.</p>
         <p>She holds a BA from UC Davis and is a licensed funeral director in California. She lives in Oakland.</p>
       </div>
-    </div>
+    </section>
 
-    <div class="career-grid" id="career">
+    <section class="career-grid" id="career">
 
       <div class="career-row">
         <div class="career-period">
-          <div class="career-year">2023</div>
+          <div class="career-year"><time datetime="2023">2023</time></div>
           <div class="career-org">Hearst Bay Area</div>
         </div>
         <div class="career-content">
@@ -431,18 +475,18 @@ footer .wrap { flex-direction: column; align-items: flex-start; }
 
       <div class="career-row">
         <div class="career-period">
-          <div class="career-year">2021</div>
+          <div class="career-year"><time datetime="2021">2021</time></div>
           <div class="career-org">Deathcare Solutions</div>
         </div>
         <div class="career-content">
-          <h2 class="career-title">Founder & CEO</h2>
+          <h2 class="career-title">Founder &amp; CEO</h2>
           <p class="career-desc">Founded a consultancy specializing in digitizing the funeral experience. Guided early-stage funeral homes through licensing, family experience design, and CRM implementation. A leading consultant in water cremation.</p>
         </div>
       </div>
 
       <div class="career-row">
         <div class="career-period">
-          <div class="career-year">2018</div>
+          <div class="career-year"><time datetime="2018">2018</time></div>
           <div class="career-org">Tulip Cremation</div>
         </div>
         <div class="career-content">
@@ -451,16 +495,16 @@ footer .wrap { flex-direction: column; align-items: flex-start; }
         </div>
       </div>
 
-    </div>
+    </section>
 
     <div class="pullquote-section">
-      <p class="pullquote">"The questions people avoid are usually the ones <span class="red">worth asking.</span>"</p>
-      <p class="pullquote-attr">On deathcare, media, and everything in between</p>
+      <blockquote class="pullquote">"The questions people avoid are usually the ones <span class="red">worth asking.</span>"</blockquote>
+      <p class="pullquote-attr">— Kelly Guyon, on deathcare, media, and everything in between</p>
     </div>
 
   </main>
 
-  <div class="contact-section" id="contact">
+  <section class="contact-section" id="contact">
     <div class="contact-left">
       <h2 class="contact-headline">Let's<br>talk.</h2>
       <p class="contact-sub">Open to conversations about media strategy, deathcare innovation, entrepreneurship, and collaboration.</p>
@@ -479,7 +523,7 @@ footer .wrap { flex-direction: column; align-items: flex-start; }
         <p class="contact-item-value">Oakland, CA · Bay Area</p>
       </div>
     </div>
-  </div>
+  </section>
 
   <footer>
     <div class="wrap">
